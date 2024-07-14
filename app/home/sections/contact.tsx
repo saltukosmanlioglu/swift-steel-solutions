@@ -19,7 +19,7 @@ const Contact: React.FunctionComponent = React.forwardRef<HTMLDivElement>(
         <Title
           text={
             <p className="text-00006 text-md font-light text-right">
-              Looking to make your mark? We'll help you turn
+              Looking to make your mark? We&apos;ll help you turn
               <br />
               your project into a success story.
             </p>

@@ -21,6 +21,7 @@ const config: Config = {
       },
       borderColor: {
         "fff01": 'rgb(255, 255, 255, 0.1)',
+        "00007": 'rgb(0, 0, 0, 0.7)',
       },
       borderWidth: {
         0.5: "0.5px"
@@ -32,6 +33,7 @@ const config: Config = {
         0.5: "0.5px"
       },
       textColor: {
+        orange: '#ff9800',
         "00006": 'rgb(0, 0, 0, 0.6)',
         "fff01": "rgba(255, 255, 255, .1)",
         "fff04": "rgba(255, 255, 255, .4)",
