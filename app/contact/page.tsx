@@ -26,7 +26,7 @@ export default function Contact() {
       </div>
       <section className="py-24 px-64 bg-white">
         <p className="text-5xl font-thin text-center text-black">
-          <strong>Let's</strong> Talk
+          <strong>Let&apos;s</strong> Talk
         </p>
         <form className="flex flex-col flex-wrap gap-8 w-full mt-20">
           <div className="flex flex-wrap justify-between gap-4 [&>div]:w-[calc(50%-12px)] mobile:flex-col mobile:[&>div]:w-full mobile:gap-4">
