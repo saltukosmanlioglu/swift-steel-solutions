@@ -3,11 +3,20 @@ import React from "react";
 import Web from "./web";
 import Mobile from "./mobile";
 
-const Menu: React.FunctionComponent = () => {
+export interface MenuItemProps {
+  title: string;
+  url: string;
+}
+
+export interface MenuProps {
+  menuItems: Array<MenuItemProps>;
+}
+
+const Menu: React.FunctionComponent<MenuProps> = ({ menuItems }) => {
   return (
     <header>
-      <Web />
-      <Mobile />
+      <Web menuItems={menuItems} />
+      <Mobile menuItems={menuItems} />
     </header>
   );
 };

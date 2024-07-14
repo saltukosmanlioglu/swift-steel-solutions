@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Outfit } from "next/font/google";
+
+import Footer from "@/components/layout/footer";
+import ScrollUp from "@/components/layout/scroll-up";
 
 import "./globals.css";
 
-const jost = Jost({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   authors: {
     name: "Saltuk Osmanlıoğlu",
+    url: "milabilisim.com.tr",
   },
   icons: {
     icon: "/images/logo.png",
@@ -15,7 +19,7 @@ export const metadata: Metadata = {
   other: {
     email: "saltuk.osmanlioglu@gmail.com",
   },
-  title: "SWIFT Steel Solitions | Official Web Site",
+  title: "SWIFT Steel Solutions | Official Web Site",
 };
 
 export default function RootLayout({
@@ -25,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={outfit.className}>
+        <div>{children}</div>
+        <Footer />
+        <ScrollUp />
+      </body>
     </html>
   );
 }

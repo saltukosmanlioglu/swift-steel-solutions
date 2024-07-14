@@ -1,7 +1,14 @@
+import Menu from "@/components/layout/menu";
+
+import { AboutUs, Contact, Services } from "./sections";
+
 export default function Home() {
   return (
     <div>
-      <div></div>
+      <Menu menuItems={[]} />
+      <AboutUs />
+      <Services />
+      <Contact />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import React from "react";
 
-const Mobile: React.FunctionComponent = () => {
+import { MenuProps } from ".";
+
+const Mobile: React.FunctionComponent<MenuProps> = ({ menuItems }) => {
   return (
     <div>
       <div></div>

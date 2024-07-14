@@ -13,6 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundColor: {
+        orange: '#ff9800',
+      },
+      height: {
+        "90vh": "90vh",
+        "85vh": "85vh",
+        "80vh": "80vh"
+      },
+      textColor: {
+        "00006": 'rgb(0, 0, 0, 0.6)'
+      },
+      animation: {
+        "mil-lines": "bounce 10s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
