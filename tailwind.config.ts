@@ -16,6 +16,8 @@ const config: Config = {
       backgroundColor: {
         orange: '#ff9800',
         "fff06": 'rgb(255, 255, 255, 0.6)',
+        "00006": 'rgb(0, 0, 0, 0.6)',
+        gray: '#f2f2f2',
       },
       borderColor: {
         "fff01": 'rgb(255, 255, 255, 0.1)',
@@ -31,7 +33,10 @@ const config: Config = {
       },
       textColor: {
         "00006": 'rgb(0, 0, 0, 0.6)',
-        "fff06": 'rgb(255, 255, 255, 0.6)'
+        "fff01": "rgba(255, 255, 255, .1)",
+        "fff04": "rgba(255, 255, 255, .4)",
+        "fff06": 'rgb(255, 255, 255, .6)',
+        "fff09": "rgba(255, 255, 255, .9)",
       },
       animation: {
         "mil-lines": "bounce 10s ease-in-out infinite",

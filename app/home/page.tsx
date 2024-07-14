@@ -8,8 +8,7 @@ export default function Home() {
       {/* <Menu menuItems={[]} /> */}
       <AboutUs />
       <Services />
-      {/* <Contact /> */}
-      <div className="h-screen"></div>
+      <Contact />
     </div>
   );
 }

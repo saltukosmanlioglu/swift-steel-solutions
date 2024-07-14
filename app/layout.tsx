@@ -32,7 +32,7 @@ export default function RootLayout({
       <body className={outfit.className}>
         <main>
           <div>{children}</div>
-          {/* <Footer /> */}
+          <Footer />
           {/* <ScrollUp /> */}
         </main>
       </body>

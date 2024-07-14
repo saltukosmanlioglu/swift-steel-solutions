@@ -10,7 +10,16 @@
 
 ::selection {
   background-color: black;
-  color: white
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff9800;
 }
 
 @media (prefers-color-scheme: dark) {
