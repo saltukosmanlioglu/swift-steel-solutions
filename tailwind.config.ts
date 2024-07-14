@@ -15,14 +15,23 @@ const config: Config = {
       },
       backgroundColor: {
         orange: '#ff9800',
+        "fff06": 'rgb(255, 255, 255, 0.6)',
+      },
+      borderColor: {
+        "fff01": 'rgb(255, 255, 255, 0.1)',
+      },
+      borderWidth: {
+        0.5: "0.5px"
       },
       height: {
         "90vh": "90vh",
         "85vh": "85vh",
-        "80vh": "80vh"
+        "80vh": "80vh",
+        0.5: "0.5px"
       },
       textColor: {
-        "00006": 'rgb(0, 0, 0, 0.6)'
+        "00006": 'rgb(0, 0, 0, 0.6)',
+        "fff06": 'rgb(255, 255, 255, 0.6)'
       },
       animation: {
         "mil-lines": "bounce 10s ease-in-out infinite",

@@ -30,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <div>{children}</div>
-        <Footer />
-        <ScrollUp />
+        <main>
+          <div>{children}</div>
+          {/* <Footer /> */}
+          {/* <ScrollUp /> */}
+        </main>
       </body>
     </html>
   );
