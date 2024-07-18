@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 
 import Footer from "@/components/layout/footer";
-import ScrollUp from "@/components/layout/scroll-up";
+import Web from "@/components/layout/menu/web";
 
 import "./globals.css";
 
@@ -31,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={outfit.className}>
         <main>
+          <Web menuItems={[]} />
           <div>{children}</div>
           <Footer />
-          {/* <ScrollUp /> */}
         </main>
       </body>
     </html>
