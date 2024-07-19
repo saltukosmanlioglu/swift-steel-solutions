@@ -26,9 +26,9 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({
   position = "start",
   theme = "smoke",
 }) => {
+  const alignment = position === "center" ? "text-center" : "text-left";
   const bgColor = theme === "smoke" ? "bg-white" : "bg-black";
   const textColor = theme === "smoke" ? "text-black" : "text-white";
-  const alignment = position === "center" ? "text-center" : "text-left";
 
   return (
     <div className={`${bgColor} ${textColor} py-32 px-40`}>
@@ -37,11 +37,8 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({
           position === "center" ? "flex items-center justify-center" : ""
         }`}
       >
-        <div className="flex items-center gap-x-1 tracking-widest">
-          <Link
-            className="font-light text-black hover:text-orange"
-            href="/home"
-          >
+        <div className="flex items-center gap-x-1 tracking-widest text-sm font-semibold">
+          <Link className="text-black hover:text-orange" href="/home">
             HOME
           </Link>
           <CgFormatSlash color="#000" size={24} />
@@ -49,14 +46,19 @@ const Breadcrumb: React.FunctionComponent<BreadcrumbProps> = ({
             item.href ? (
               <div key={index}>
                 <button>
-                  <p className="text-00006">{item.text}</p>
+                  <p className="text-00006 text-sm font-extralight">
+                    {item.text}
+                  </p>
                 </button>
                 <CgFormatSlash color="#000" size={24} />
               </div>
             ) : (
-              <p key={index} className="text-00006 font-light">
-                {item.text}
-              </p>
+              <React.Fragment key={index}>
+                <p className="text-00006 text-sm font-extralight">{item.text}</p>
+                {index !== items.length - 1 && (
+                  <CgFormatSlash color="#000" size={24} />
+                )}
+              </React.Fragment>
             )
           )}
         </div>
